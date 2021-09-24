@@ -24,10 +24,15 @@ function areaTanaman(lebar, panjang) {
 function jmlhBibit(lebar, panjang) {
     let luas = luasTanah(lebar, panjang);
     let area = areaTanaman(lebar, panjang);
-    return (luas / (2 * 2)) * area;
+    // return area * 15;
+    if (area % 2 === 0) {
+        return area * 15; // jika areanya bukan bilangan koma
+    } else {
+        return area * 10; //ini masih belum tahu kalau areanya bilangan koma
+    }
 }
 
 console.log(luasTanah(50, 50));
 console.log(pajak(50, 50));
 console.log(areaTanaman(50, 50));
-console.log(jmlhBibit(50,50));
+console.log(jmlhBibit(10,20));
