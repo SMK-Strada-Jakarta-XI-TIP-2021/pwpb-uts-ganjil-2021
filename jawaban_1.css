@@ -19,16 +19,11 @@ main {
 	margin: 0px 0% 30px 0%;
 }
 
-th, td {
+td {
     padding: 10px;
 }
 
-th{
-	background-color: black;
-	color: #ffe221;
-}
-
-.heading{
+.heading {
 	text-align: center;
 	text-decoration: none;
 	color: #ffe221;
@@ -36,38 +31,30 @@ th{
 	display: block;
 }
 
-.wpos{
+.wpos {
 	text-align: center;
-}
-
-.wpos td{
-	color: #77ff21;
-}
-
-.pos{
-	text-align: center;
-}
-
-.pos td{
-	color: #ff7b21;
-}
-
-table .col{
 	border-bottom: 1px solid #FFFFFF;
 }
 
-.wpos:hover{
-	background-color: #77ff21;
+.wpos td {
+	color: #77ff21;
+	font-size: 20px;
 }
 
-.wpos:hover td{
-	color: #000000;
+.pos {
+	text-align: left;
 }
 
-.pos:hover{
-	background-color: #ff7b21;
+.pos td {
+	color: rgb(42, 195, 206);
+	font-family: monospace;
+	font-size: 20px;
 }
 
-.pos:hover td{
+.pos:hover {
+	background-color: rgb(42, 195, 206);
+}
+
+.pos:hover td {
 	color: #000000;
 }
