@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabel-buku {
+    /* background-color: ghostwhite; */
+}
+
+.tabel-buku {
+    border: 1px solid black;
+    width: 1150px;
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+.tabel-buku th:first-of-type {
+    width: 5px;
+    padding: 15px 2px;
+}
+
+.tabel-buku td {
+    border: 1px solid black;
+    padding: 15px 20px;
+} 
+
+
+.tabel-buku th {
+    border: 1px solid black;
+    padding: 8px 20px;
+} 
+
+.tabel-buku td img {
+    width: 80px;
+}
+
+.tabel-buku tr:nth-of-type(2) td:nth-of-type(2), tr:nth-of-type(2) td:nth-of-type(3), tr:nth-of-type(2) td:nth-of-type(4) {
+    text-align: left;
+}
+
+.tabel-buku tr:nth-of-type(3) td:nth-of-type(2), tr:nth-of-type(3) td:nth-of-type(3), tr:nth-of-type(3) td:nth-of-type(4) {
+    text-align: left;
+}
+
+.tabel-buku tr:nth-of-type(4) td:nth-of-type(2), tr:nth-of-type(4) td:nth-of-type(3), tr:nth-of-type(4) td:nth-of-type(4) {
+    text-align: left;
+}
+
+.tabel-buku tr:nth-of-type(5) td:nth-of-type(2), tr:nth-of-type(5) td:nth-of-type(3), tr:nth-of-type(5) td:nth-of-type(4) {
+    text-align: left;
+}
+
+.tabel-buku tr:nth-of-type(6) td:nth-of-type(2), tr:nth-of-type(6) td:nth-of-type(3), tr:nth-of-type(6) td:nth-of-type(4) {
+    text-align: left;
+}
+
+.tabel-buku th{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+.tabel-buku td {
+    text-align: center;
+    background-color: #e63946;
+    color: #f1faee;
+}
