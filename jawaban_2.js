@@ -13,14 +13,20 @@ function pajak(panjang, lebar){
     }
 }
 function areaLahan(panjang,lebar){
-    let luas = luasLahan(panjang,lebar);return luas /(2*2);
+    let luas = luasLahan(panjang,lebar);
+    return Math.floor(luas /(2*2)) ;
 }
 function bibitJagung (panjang,lebar){
     let luas = luasLahan(panjang,lebar);
     let area = areaLahan(panjang,lebar);
-    return (luas/(2*2)) * area;
+    if (area % 2 === 0){
+        return area * 15;
+    }
+    else{
+        return Math.floor(area * 10);
+    }
 }
-console.log(`luasnya ${luasLahan(12,12)} meter persegi`);
-console.log(`pajak yang harus dibayar adalah Rp${pajak(12,12)}`);
-console.log(`jumlah area tanam ada ${areaLahan(12,12)}`);
-console.log(`jumlah bibit jagung nya ada ${bibitJagung(12,12)}`);
+console.log(`luasnya ${luasLahan(15,15)} meter persegi`);
+console.log(`pajak yang harus dibayar adalah Rp${pajak(15,15)}`);
+console.log(`jumlah area tanam ada ${areaLahan(15,15)} petak`);
+console.log(`jumlah bibit jagung nya ada ${bibitJagung(15,15)} bibit`);
